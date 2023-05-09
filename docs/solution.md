@@ -72,5 +72,6 @@ Please see the database design here : https://www.notion.so/RESILIENT-DECENTRALI
 # Testing
 ![testing](https://user-images.githubusercontent.com/91232198/236421943-858ec5a3-818a-42ee-b9d0-9a6db557029c.png)
 
-# 2 Month plan 
-Within a span of 2 months we will be close to building the entire project excluding the testing phase of the project.
+# MVP Stage - 2 Month plan
+![MVP](https://github.com/IBC-Media/Team-Akash/assets/91232198/978c04c2-4b16-475f-aed7-b98d18315d19)
+
