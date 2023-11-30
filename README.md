@@ -12,6 +12,8 @@ We Team Aakash, built the prototype of the product Data RelayX to provide Resili
 ### Image push interface
 ![image](https://github.com/IBC-Media/Grant-Akash/assets/91232198/be62aed2-91a6-4db1-9b0d-a45fd3cc9346)
 
+## Video Demonstration 
+video link : https://youtu.be/Ax-Jtip6ewQ
 
 ## Technology Stack 
 ### Frontend Stack 
