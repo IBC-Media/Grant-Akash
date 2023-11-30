@@ -6,18 +6,129 @@
 </head>
 
 <body>
-<form name="form1" action="" method="post" enctype="multipart/form-data">
+<form name="form1" action="" method="post" enctype="multipart/form-data" class="wrapper" >
     <table>
         <tr>
-            <td>Select File</td>
+            <td><h1 style="color: whitesmoke;">Select file</h1></td>
             <td><input type="file" name="f1"></td>
         </tr>
         <tr>
-            <td><input type="submit" name="submit1" value="upload"></td>
-            <td><input type="submit" name="submit2" value="display"></td>
+            <td><input class="btn" type="submit" name="submit1" value="upload"></td>
+            
         </tr>
     </table>
 </form>
+<style>
+        body {
+            background: url('Landing_Page.png') no-repeat center center fixed; 
+            background-size: cover;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .wrapper {
+            width: 420px;
+            background: transparent;
+            border:2px solid rgba(255, 255, 255, .2);
+            backdrop-filter:blur(20px);
+            box-shadow: 0 0 10px rgba(0 , 0 , 0 , .2);
+            color: #fff;
+            border-radius: 10px;
+            padding: 30px 40px;
+            position: relative;
+            top: 2%;
+            left: 15%;
+
+        }
+
+        .wrapper h1{
+            font-size: 36px;
+            text-align: center;
+            color: gainsboro;
+        }
+        .wrapper .input-box {
+            position: relative;
+            width: 100%;
+            height: 50px;
+            margin: 30px 0;
+        }
+
+        .input-box input{
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            border: none;
+            outline: none;
+            border: 2px solid rgba(0, 255, 255, .2);
+            border-radius: 40px;
+            font-size: 16px;
+            color: #fff;
+            padding: 20px 45px 20px 20px;
+        }
+        .input-box input::placeholder{
+            color: #fff;
+        }
+        .input-box i{
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 20px;
+
+        }
+
+        .wrapper .btn{
+            width: 100%;
+            height: 45px;
+            border-radius: 40px;
+            border: none;
+            outline: none;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0 , 0 , 0 , .1);
+            cursor: pointer;
+            font-size: 16px;
+            color: #333;
+            font-weight: 600;
+        }
+
+        form {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: absolute;
+            top:50px;
+            left:50px;
+        }
+
+        label {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        textarea {
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
 
 <?php
 $conn = new mysqli("localhost", "root", "", "test_blob1");
