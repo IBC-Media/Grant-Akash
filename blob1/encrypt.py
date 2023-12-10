@@ -13,7 +13,8 @@ import secrets
 import hashlib
 from cryptography.hazmat.primitives import padding 
 import os 
-from decentralise import demo
+import decentralise
+import dataPushToChain
 
 def derive_key(password, salt):
     kdf = PBKDF2HMAC(
@@ -71,10 +72,14 @@ def main():
         timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         encrypted_images[image_name] = {'data': encrypted_data, 'timestamp': timestamp, 'CID' : CID }
 
+        # Push To BlockChain
+        dataPushToChain.pushData(image_name,CID)
+
     output_json_path = os.path.join(output_folder, 'encrypted_images.json')
     with open(output_json_path, 'w') as json_file:
         json.dump(encrypted_images, json_file, indent=2)
-    demo()
+    decentralise.demo()
+    
 
 if __name__ == "__main__":
     main()
