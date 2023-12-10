@@ -42,7 +42,7 @@ And run the chain using :
 cd Grant-Akash
 ```
 ```
-cargo-update
+cargo update
 ```
 ```
 cargo build --release
