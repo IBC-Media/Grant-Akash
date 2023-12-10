@@ -59,7 +59,7 @@ https://polkadot.js.org/apps/?rpc=ws%3A%2F%2F127.0.0.1%3A9944
 C:\xampp\htdocs
 ```
 3. Run XAMPP server & start `Apache` & `My SQL` services
-4. Create a Database named `test_blob1` & the table named `blob1` in phpMyAdmin
+4. Create a Database named `test_blob1` & the table named `table1` in phpMyAdmin
 5. Run the application to encrypt, store & push the Drone generated images to substrate's DLT
 ```
 localhost/blob1/index.php
