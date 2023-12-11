@@ -12,7 +12,7 @@ def pushData(filename: str, cid: str):
         # Connects To Polkadtot JS for Data Entry
         driver.get('https://polkadot.js.org/apps/?rpc=ws%3A%2F%2F127.0.0.1%3A9944#/extrinsics')
         driver.maximize_window()
-        # time.sleep(5)
+        time.sleep(3)
 
         # Initiates the data pushing by account configuration
         seleniumHelper.initPush(driver)
