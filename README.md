@@ -30,7 +30,15 @@ video link : https://youtu.be/Ax-Jtip6ewQ
 - Selenium
 ### Cloud Services
 - AWS Lambda Serverless application models
-- Amazon Keyspaces apache Cassandra 
+- Amazon Keyspaces apache Cassandra
+
+## Prerequisites:
+OS: Ubuntu (>ver 20) in WSL2.
+-  Applications: (All In WSL2)
+1. google-chrome and it's web driver
+2. python3 and Selenium
+3. git
+4. rustc and cargo ( for rust and cargo configuration follow : 'https://docs.substrate.io/install/windows/' )
 
 ## How to run 
 1. Clone the repo using
