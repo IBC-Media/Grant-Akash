@@ -17,7 +17,7 @@ def initPush(driver):
     pname.click()
 
     time.sleep(2)
-    tpallet = driver.find_element(By.XPATH,'/html/body/div[1]/div[1]/div[2]/main/div/div[2]/div[1]/div/div/div/div[1]/div/div[2]/div[6]')
+    tpallet = driver.find_element(By.XPATH,'/html/body/div[1]/div[1]/div[2]/main/div/div[2]/div[1]/div/div/div/div[1]/div/div[2]/div[5]')
     tpallet.click()
 
 def dataPush(driver,key: str, val: str):
@@ -28,7 +28,7 @@ def dataPush(driver,key: str, val: str):
 
     valinput = driver.find_element(By.XPATH,'/html/body/div[1]/div[1]/div[2]/main/div/div[2]/div[2]/div/div[2]/div/div/div/div/input')
     valinput.clear()
-    time.sleep(3)
+    time.sleep(2)
     valinput.send_keys(val)
     time.sleep(2)
 
@@ -39,7 +39,7 @@ def dataPush(driver,key: str, val: str):
     approvebtn = driver.find_element(By.XPATH,'/html/body/div[3]/div[2]/div[3]/div/button')
     approvebtn.click()
 
-    time.sleep(3)
+    time.sleep(5)
 
 def dataRetrieve(driver,key: str)  -> str:
     pname = driver.find_element(By.XPATH,'/html/body/div[1]/div[1]/div[2]/main/section/div[1]/div[1]/div/div/div/div[1]/div/i')
