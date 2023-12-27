@@ -14,6 +14,7 @@ We Team Aakash, built the prototype of the product Data RelayX to provide Resili
 
 ## Video Demonstration 
 video link : https://youtu.be/Ax-Jtip6ewQ
+more brief explanation : https://youtu.be/PQDiutClegI
 
 ## Technology Stack 
 ### Frontend Stack 
