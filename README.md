@@ -42,7 +42,8 @@ OS: Ubuntu (>ver 20) in WSL2.
 4. rustc and cargo ( for rust and cargo configuration follow : 'https://docs.substrate.io/install/windows/' )
 
 ## How to run 
-1. Clone the repo using
+
+1. First Install WSL then install rustc and cargo in wsl  follow : 'https://docs.substrate.io/install/linux/' then in wsl Clone the repo using
 ```
 git clone https://github.com/IBC-Media/Grant-Akash.git
 ```
@@ -63,7 +64,7 @@ Interact with the Blockchain :
 ```
 https://polkadot.js.org/apps/?rpc=ws%3A%2F%2F127.0.0.1%3A9944
 ```
-2. Install XAMPP server & paste the `blob1` in the below path :
+2. In Windows Install XAMPP server & paste the `blob1` in the below path :
 ```
 C:\xampp\htdocs
 ```
