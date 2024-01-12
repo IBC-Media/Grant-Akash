@@ -46,7 +46,8 @@ def dataRetrieve(driver,key: str)  -> str:
     pname.click()
     time.sleep(2)
 
-    tpallet = driver.find_element(By.XPATH,'/html/body/div[1]/div[1]/div[2]/main/section/div[1]/div[1]/div/div/div/div[1]/div/div[2]/div[8]')
+
+    tpallet = driver.find_element(By.XPATH,'/html/body/div[1]/div[1]/div[2]/main/section/div[1]/div[1]/div/div/div/div[1]/div/div[2]/div[7]')
     tpallet.click()
     time.sleep(2)
 
@@ -58,7 +59,7 @@ def dataRetrieve(driver,key: str)  -> str:
 
     send = driver.find_element(By.XPATH,'/html/body/div[1]/div[1]/div[2]/main/section/div[2]/button')
     send.click()
-    time.sleep(4)
+    time.sleep(2)
 
     obtval = driver.find_element(By.XPATH,'/html/body/div[1]/div[1]/div[2]/main/section[2]/div/div[1]/div/div/div/pre/div')
     result = obtval.text
