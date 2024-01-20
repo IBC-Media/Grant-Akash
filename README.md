@@ -43,7 +43,12 @@ OS: Ubuntu (>ver 20) in WSL2.
 
 ## How to run 
 
-1. First Install WSL then install rustc and cargo in wsl  follow : 'https://docs.substrate.io/install/linux/' then in wsl Clone the repo using
+1. First Install WSL then install rustc and cargo in wsl  (follow : 'https://docs.substrate.io/install/linux/' )
+First Open command prompt and type:
+```
+wsl
+```
+Then Clone the repo
 ```
 git clone https://github.com/IBC-Media/Grant-Akash.git
 ```
