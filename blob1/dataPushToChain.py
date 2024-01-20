@@ -19,6 +19,7 @@ def pushData(filename: str, cid: str):
 
         # Pushes File and Cid used for encryption
         seleniumHelper.dataPush(driver,filename,cid)
+        time.sleep(3)
 
     except Exception as exceptionobj:
         print("Exception Occured , Info of Exception: ")

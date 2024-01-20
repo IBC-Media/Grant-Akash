@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Viewer</title>
+    <link href="./styles-retreival.css" rel = "stylesheet">
+</head>
+<body>
+    <div class="navbar">
+            <div class="brand">
+                <img src="./assets-retrieval/navbar_logo.png" width="50px" height="50px" alt="Logo" class="logo">
+                <a class="brandname">DATA RELAY-X</a>
+            </div>
+        <div class="nav-links">
+            <button class="nav1" href="#" onclick="home()">HOME</button>
+            <button class="nav2" href="#"onclick="push()" >PUSH_DATA</button>
+            <button class="nav3" href="#">VIEW_DATA</button>
+        </div>
+    </div>
+
+    <div class="heading">
+        <h1> DATA RETRIEVAL PAGE</h1>
+    </div>
+
+    <div id = "container">
+        <div id="filelist" style="flex: 1;">
+            <h1>CLICK THE REQUIRED FILE TO VIEW</h1>
+            <button onclick="fetchandupdate('1705665000')" id="1705665000">10:45:25_31/11/2023</button>
+            <button onclick="fetchandupdate('10:45:25_31/11/2023')" id="10:45:25_31/11/2023">10:46:25_31/11/2023</button>
+            <button onclick="fetchandupdate('10:45:25_31/11/2023')" id="10:45:25_31/11/2023">10:47:25_31/11/2023</button>
+            <button onclick="fetchandupdate('10:45:25_31/11/2023')" id="10:45:25_31/11/2023">10:48:25_31/11/2023</button>
+        </div>
+        <div id = "data" style="flex: 2">
+            <h1>THE CORRESPONDING IMAGE IS </h1>
+            <!-- <img src="./assets-retrieval/picture.png" width="400px" height ="300px"> -->
+            <iframe id= 'resData' src="./assets-retrieval/picture.jpg" width="600" height="450" allow="autoplay"></iframe>
+            <button id = 'reset' onclick="reset()" > RESET </button>
+      </div>
+    <div>
+
+
+    
+    <script src="./script-retrieval.js"></script>
+</body>
+</html>
