@@ -6,6 +6,9 @@ import time
 def initPush(driver):
     time.sleep(3)
 
+    closebtn = driver.find_element(By.XPATH,'/html/body/div[1]/div[1]/div[3]/div/button')
+    closebtn.click()
+
     buttonmenu = driver.find_element(By.XPATH,'/html/body/div[1]/div[1]/div[2]/main/div/div[1]/div[2]/div')
     buttonmenu.click()
     time.sleep(2)
@@ -42,6 +45,11 @@ def dataPush(driver,key: str, val: str):
     time.sleep(5)
 
 def dataRetrieve(driver,key: str)  -> str:
+
+    closebtn = driver.find_element(By.XPATH,'/html/body/div[1]/div[1]/div[3]/div/button')
+    closebtn.click()
+
+  
     pname = driver.find_element(By.XPATH,'/html/body/div[1]/div[1]/div[2]/main/section/div[1]/div[1]/div/div/div/div[1]/div/i')
     pname.click()
     time.sleep(2)
